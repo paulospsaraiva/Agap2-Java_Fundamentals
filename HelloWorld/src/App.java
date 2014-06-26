@@ -11,8 +11,17 @@ public class App {
 	 */
 	public static void main(String[] args){
 		
-		//Print Hello
-		System.out.println("Hello World!");
+		for(int i = 0 ; i < args.length ; i++){
+			/*
+			//Print Hello
+			if(i == 0) System.out.print(args[0]);
+			else System.out.print(" " + args[i]);
+			*/
+			
+			System.out.print((i==0) ? args[0] : " " + args[i]);
+		}
+		
+		
 	}
 	
 }
